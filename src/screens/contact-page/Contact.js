@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 
-const Contact = () => {
+const Contact = ({navigation}) => {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const click = () => {
@@ -16,6 +16,7 @@ const Contact = () => {
       alert('error');
     } else {
       alert('login successfull');
+      navigation.navigate('Home', {myName: `${name}`});
     }
   };
   return (
@@ -50,7 +51,7 @@ const Contact = () => {
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
-    color: '#fff',
+ 
 
     paddingHorizontal: 24,
   },
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     textAlign: 'center',
     marginBottom: 20,
+    color: 'black',
   },
   sectionDescription: {
     marginTop: 8,
