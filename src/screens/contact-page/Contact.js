@@ -1,4 +1,3 @@
-import react from 'react';
 import {
   View,
   Text,
@@ -51,8 +50,7 @@ const Contact = ({navigation}) => {
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
- 
-
+    color: 'black',
     paddingHorizontal: 24,
   },
   sectionTitle: {
@@ -61,7 +59,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     textAlign: 'center',
     marginBottom: 20,
-    color: 'black',
   },
   sectionDescription: {
     marginTop: 8,
@@ -74,6 +71,7 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     marginBottom: 10,
+    color: 'red',
   },
   button: {
     borderWidth: 1,

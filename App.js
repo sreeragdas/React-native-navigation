@@ -9,13 +9,11 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import React from 'react';
-import type {Node} from 'react';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Contact from './src/screens/contact-page/Contact';
 import Home from './src/screens/home/Home';
 
-const App: () => Node = () => {
+const App = () => {
   const Stack = createNativeStackNavigator();
 
   return (
