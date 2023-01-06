@@ -1,8 +1,10 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+
 import Home from '../home/Home';
 import Job from '../tabScreen/Job';
 import Profile from '../tabScreen/Profile';
 import Search from '../tabScreen/Search';
+
 const Tab = createBottomTabNavigator();
 const TabView = () => {
   return (

@@ -11,16 +11,16 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 
 import Contact from './src/screens/contact-page/Contact';
-import Home from './src/screens/home/Home';
 
+import TabView from './src/screens/tabNavigation/TabView';
+
+const Stack = createNativeStackNavigator();
 const App = () => {
-  const Stack = createNativeStackNavigator();
-
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
         <Stack.Screen name="Login" component={Contact} />
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={TabView} />
       </Stack.Navigator>
     </NavigationContainer>
   );

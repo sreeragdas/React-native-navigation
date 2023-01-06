@@ -6,7 +6,7 @@ const Profile = ({navigation}) => {
       <Text>Profile Screen</Text>
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate('NestedScreen', {
+          navigation.navigate('Home', {
             msg: 'profile screen navigation',
           });
         }}>

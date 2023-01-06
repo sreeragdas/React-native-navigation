@@ -1,11 +1,12 @@
 import {View, Text, Button, StyleSheet} from 'react-native';
+rom '@react-navigation/bottom-tabs';
 
 const Home = ({route, navigation}) => {
-  const {myName} = route.params;
+  // const {myName} = route.params;
   //if we are using same name variable to store then we dont want to write route.params.myName
   return (
     <View>
-      <Text style={{color: 'red'}}>Welcome {myName}</Text>
+      <Text style={{color: 'red'}}>Welcome</Text>
       <View style={styles.nameText}>
         <Button
           title="GO Back"

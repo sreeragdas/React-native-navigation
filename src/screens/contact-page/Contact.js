@@ -4,6 +4,7 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
 import React, {useState} from 'react';
 
@@ -12,9 +13,9 @@ const Contact = ({navigation}) => {
   const [password, setPassword] = useState('');
   const click = () => {
     if (!password || !name) {
-      alert('error');
+      Alert.alert('error');
     } else {
-      alert('login successfull');
+      Alert.alert('login successfull');
       navigation.navigate('Home', {myName: `${name}`});
     }
   };
