@@ -1,5 +1,5 @@
 import {View, Text, Button, StyleSheet} from 'react-native';
-rom '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Home = ({route, navigation}) => {
   // const {myName} = route.params;
